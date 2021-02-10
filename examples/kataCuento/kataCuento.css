@@ -1,0 +1,90 @@
+
+body {
+    background-image: url(img/murcia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.batalla {
+    display: flex;
+    justify-content: space-between;
+}
+.buenosAll {
+    display: flex;
+    flex-direction: column;
+    width: 7%;
+    height: 7%;
+}
+.malosAll {
+    display: flex;
+    flex-direction: column;
+    width: 7%;
+    height: 7%;
+}
+.fondo {
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.buenos {
+    animation: buenos;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+.bruja {
+    animation: bruja;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+.bruja:hover {animation-play-state: running;}
+.dragon {
+    animation: dragon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+.dragon:hover {animation-play-state: running;}
+.nomo {
+    animation: nomo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+.nomo:hover {animation-play-state: running;}
+.cosas {
+    display: flex;
+    width: 7%;
+    height: 7%;
+    animation: cosas;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes buenos {
+    0% {transform: none;}
+   100% {transform: translate(600%,0px)}}
+
+@keyframes cosas {
+    0% {transform: rotate(-45deg)}
+    50% {transform: rotate(45deg)}
+    100% {transform: rotate(0deg)}}
+
+@keyframes bruja {
+    0% {transform: none;}
+    50% {transform: skew(20deg,10deg)}
+    100% {transform: none;}}
+
+@keyframes dragon {
+    0% {transform: none;}
+    50% {transform: scale(2)}
+    100% {transform: none;}}
+@keyframes nomo {
+    0% {transform: none;}
+    100% {transform: rotate(360deg);}
+}

@@ -1,0 +1,42 @@
+body {font-family: sans-serif}
+
+/* ESTILOS GENERALES */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    line-height: 3rem;
+    position: relative;
+}
+nav li ul {
+    position: absolute;
+    display: none;
+}
+nav a {
+    color: whitesmoke;
+    display: block;
+    padding: 0 2em;
+    transition: 1s;
+    text-decoration: none;
+}
+nav a:hover {
+    background: rgb(23, 146, 134);
+}
+
+nav li:hover > ul {
+    display: block;
+}
+/* PRIMER NIVEL */
+nav > ul {
+    background-color: cadetblue;
+    display: table;
+    width: 100%;
+}
+nav > ul > li {
+    float: left;
+}
+/* SEGUNDO NIVEL */
+nav li li {
+    background: rgb(74, 131, 133);
+}
